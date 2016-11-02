@@ -8,7 +8,7 @@ namespace ExampleChatBot.Controllers
     public class WebhookController : ApiController
     {
         /// <summary>
-        /// 
+        /// When a new message is received, this webhook route is triggered.
         /// </summary>
         /// <param name="textMessage"></param>
         /// <param name="locationMessage"></param>
@@ -17,7 +17,6 @@ namespace ExampleChatBot.Controllers
         /// <param name="voiceMessage"></param>
         /// <param name="postbackMessage"></param>
         /// <returns></returns>
-        /// 
         [Route("webhook/example_chatbot")]
         public async Task MessageReceived(BotfolioChatBotSDK.Webhook.TextMessage textMessage, BotfolioChatBotSDK.Webhook.LocationMessage locationMessage, BotfolioChatBotSDK.Webhook.ImageMessage imageMessage, BotfolioChatBotSDK.Webhook.VideoMessage videoMessage, BotfolioChatBotSDK.Webhook.VoiceMessage voiceMessage, BotfolioChatBotSDK.Webhook.PostBackMessage postbackMessage)
         {
